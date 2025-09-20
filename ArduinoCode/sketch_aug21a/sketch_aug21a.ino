@@ -40,6 +40,18 @@ void loop() {
         lcd.print("Ok");
         break;
 
+      case 'R':
+        lcd.print("E O ROCK");
+        break;
+
+      case 'H':
+        lcd.print("TRANQUILO");
+        break;
+
+      case 'Y':
+        lcd.print("EU TE AMO");
+        break;
+
       default:
         lcd.print("Comando invalido");
         break;
