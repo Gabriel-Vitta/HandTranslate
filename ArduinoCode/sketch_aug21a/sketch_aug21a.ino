@@ -17,19 +17,27 @@ void loop() {
 
     switch (comando) {
       case 'J':
-        lcd.print("JOINHA 👍");
+        lcd.print("GOSTEI");
         break;
 
       case 'D':
-        lcd.print("DESGOSTEI 👎");
+        lcd.print("DESGOSTEI");
         break;
 
       case 'E':
-        lcd.print("ESPERE ✋");
+        lcd.print("ESPERE");
         break;
 
       case 'L':
-        lcd.print("Letra L 🤟");
+        lcd.print("FAZ O L");
+        break;
+
+      case 'M':
+        lcd.print("PODE NAO MAN");
+        break;
+
+      case 'O':
+        lcd.print("Ok");
         break;
 
       default:
