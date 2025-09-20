@@ -16,9 +16,11 @@ hands = mp_hands.Hands(
 mp_draw = mp.solutions.drawing_utils
 
 # Inicia câmera
+#Mudar o valor 0 até encontrar a camera certa
 video = cv2.VideoCapture(0)
 
 # Conecta com o Arduino (ajuste a porta se necessário)
+#Verificar em que porta o arduino está conectado e modificar o 'COM3' de acordo com a porta do arduino
 arduino = serial.Serial('COM3', 9600, timeout=1)
 time.sleep(2)
 
