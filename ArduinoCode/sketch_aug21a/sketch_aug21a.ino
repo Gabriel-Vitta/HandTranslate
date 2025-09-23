@@ -1,7 +1,8 @@
 #include <LiquidCrystal.h>
 
+const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 // Pinos do LCD: RS, E, D4, D5, D6, D7
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 void setup() {
   lcd.begin(16, 2);           // Inicializa LCD 16x2
@@ -50,6 +51,14 @@ void loop() {
 
       case 'Y':
         lcd.print("EU TE AMO");
+        break;
+
+      case 'P':
+        lcd.print("PAZ");
+        break;
+
+      case 'C':
+        lcd.print("<3");
         break;
 
       default:
